@@ -1,0 +1,26 @@
+{
+	"name": "@heledron/ui",
+	"version": "1.0.0",
+	"description": "heledron.com shared UI.",
+	"type": "module",
+	"files": [
+		"./dst/**"
+	],
+	"scripts": {
+		"dev": "tsc -p tsconfig.json -w & sass --watch src:dst --style=compressed --no-source-map"
+	},
+	"exports": {
+		"./": "./dst/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TheCymaera/heledron-ui"
+	},
+	"keywords": [],
+	"author": "Cymaera",
+	"license": "MIT",
+	"dependencies": {
+		"fontawesome-svgs": "^1.0.0",
+		"helion": "^1.0.5"
+	}
+}
